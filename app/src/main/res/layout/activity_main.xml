@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context=".ui.SearchActivity">
+
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="28sp" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:id="@+id/inputlayout_searchmovie"
+            android:background="@drawable/grey_background"
+            android:textColorHint="@android:color/white"
+            android:hint="@string/app_searchlbl">
+
+            <com.android.omdbapp.omdb.ui.CustomEditTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:id="@+id/inputedittext_searchmovie"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_margin="18dp"
+        android:textSize="24sp"
+        android:layout_height="60dp"
+        style="@style/Button"
+        android:background="@drawable/searchbutton_drawable"
+        android:text="Search"
+        android:onClick="searchMovies"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="true"
+        android:id="@+id/button_searchmovies"
+        />
+
+</LinearLayout>
